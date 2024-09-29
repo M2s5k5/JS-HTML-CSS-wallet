@@ -1,0 +1,112 @@
+/* Globalni stilovi */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Wallet container */
+.wallet-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Wallet kartica */
+.wallet-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wallet-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* Naslov */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Dugmad */
+.btn {
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.connect-btn {
+    margin-bottom: 15px;
+}
+
+.send-btn {
+    background-color: #f39c12;
+}
+
+.send-btn:hover {
+    background-color: #e67e22;
+}
+
+/* Account i balans */
+.account-info {
+    margin-top: 20px;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+/* Forma za transakcije */
+.transaction-form {
+    margin-top: 20px;
+    display: grid;
+    gap: 10px;
+}
+
+.input-field {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Animacije */
+.wallet-card {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethereum Wallet</title>
+    <link rel="stylesheet" href="stil/stil.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wallet-container">
+        <div class="wallet-card">
+            <h1>Ethereum Wallet</h1>
+            <button id="connectButton" class="btn connect-btn">Connect Wallet</button>
+
+            <div class="account-info">
+                <p id="account">Account: Not connected</p>
+                <p id="balance">Balance: 0 ETH</p>
+            </div>
+
+            <div class="transaction-form">
+                <input type="text" id="receiverAddress" placeholder="Recipient Address" class="input-field">
+                <input type="text" id="amount" placeholder="Amount (ETH)" class="input-field">
+                <button id="sendButton" class="btn send-btn">Send ETH</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="stil/glava.js"></script>
+</body>
+</html>
